@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.john.hbb.MainActivity">
+
+    <item
+        android:id="@+id/action_capture"
+        android:title="@string/action_profile"
+        android:icon="@mipmap/ic_account_circle_white_24dp"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_exit"
+        android:title="@string/action_exit"
+        android:icon="@android:drawable/ic_lock_power_off"
+        app:showAsAction="never" />
+</menu>

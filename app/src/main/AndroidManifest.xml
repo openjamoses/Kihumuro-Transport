@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.john.c_transportation">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".core.BaseApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.MainActivity_C"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activities.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.SignupActivity"
+            android:label="@string/create_an_account"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.single_chatts.Chatt_Conductor"
+            android:label="@string/conductor_chatroom"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activities.single_chatts.Chatt_Students"
+            android:label="@string/student_chatt"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.single_chatts.Chatt_All"
+            android:label="@string/student_chatt"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.single_chatts.ListConductors"
+            android:label="@string/registered_conductor"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.single_chatts.AddNotification"
+            android:label="@string/replies"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ListNotifications"
+            android:label="@string/available_notifications"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.ListStages"
+            android:label="@string/available_stages"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.Notification"
+            android:label="@string/add_notifications"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.single_chatts.Register"
+            android:label="@string/create_an_account"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.single_chatts.ReplyActivity"
+            android:label="@string/view_replies"
+            android:screenOrientation="portrait"/>
+        <!-- Firebase Notifications -->
+        <service android:name="com.example.john.c_transportation.activities.firebase.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.example.john.c_transportation.activities.firebase.MyFirebaseInstanceIDService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".reminder.ScheduleService" />
+        <service android:name=".reminder.NotifyService" />
+    </application>
+
+</manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_moday"
+        android:orderInCategory="100"
+        android:title="@string/monday"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_tuesday"
+        android:orderInCategory="100"
+        android:title="@string/tuesday"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_wednesdat"
+        android:orderInCategory="100"
+        android:title="@string/wednesday"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_thursday"
+        android:orderInCategory="100"
+        android:title="@string/thursday"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_friday"
+        android:orderInCategory="100"
+        android:title="@string/friday"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_saturday"
+        android:orderInCategory="100"
+        android:title="@string/saturday"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sunday"
+        android:orderInCategory="100"
+        android:title="@string/sunday"
+        app:showAsAction="never" />
+</menu>

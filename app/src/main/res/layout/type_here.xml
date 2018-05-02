@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/sendButton"
+        android:src="@android:drawable/ic_menu_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="240dp"
+        android:padding="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/message_area"
+        android:hint="type your message here.."
+        android:maxWidth="240dp"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/type_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sendButton"
+        app:layout_constraintRight_toLeftOf="@+id/sendButton" />
+
+    <ImageView
+        android:id="@+id/pick_imageView"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="240dp"
+        android:padding="8dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/message_area"
+        app:layout_constraintEnd_toStartOf="@id/message_area"/>
+</android.support.constraint.ConstraintLayout>
