@@ -177,9 +177,13 @@ public class AddNotification extends AppCompatActivity {
                 Iterator iterator = sSet.iterator();
                 final List<String> ssList = new ArrayList<>();
                 while (iterator.hasNext()){
-                    ssList.add((String) iterator.next());
-                    String t = (String) iterator.next();
-                    list1 = list1.concat(t+"/");
+                    try {
+                        String t = (String) iterator.next();
+                        ssList.add(t);
+                        list1 = list1.concat(t + "/");
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }
                 }
 
                 for (int i=0; i<sList.size(); i++){
@@ -206,11 +210,11 @@ public class AddNotification extends AppCompatActivity {
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                         //TODO::::::
-                        Intent intent = new Intent(context, ReplyActivity.class);
-                        intent.putExtra("list1", finalList);
-                        intent.putExtra("list2", finalList1);
-                        startActivity(intent);
-                       //popup(listView,ssList,valuesList);
+                        //Intent intent = new Intent(context, ReplyActivity.class);
+                        //intent.putExtra("list1", finalList);
+                        //intent.putExtra("list2", finalList1);
+                        //startActivity(intent);
+                       popup(listView,ssList,valuesList);
                     }
                 });
                 if (totalUsers <= 0) {

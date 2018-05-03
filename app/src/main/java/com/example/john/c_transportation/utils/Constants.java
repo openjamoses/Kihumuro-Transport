@@ -66,7 +66,8 @@ public class Constants {
         public static final String STORAGE_PATH_UPLOADS = "photos/";
         public static final String DATABASE_PATH_UPLOADS = "uploads";
 
-        public static final String FIREBASE_URL = "https://foodscanner-466e0.firebaseio.com/";
+        //public static final String FIREBASE_URL = "https://foodscanner-466e0.firebaseio.com/";
+        public static final String FIREBASE_URL = "https://kihumuro-transport-app.firebaseio.com/";
 
         public static final String STORAGE_REFERENCE_CHATT = "gs://mobicarev3.appspot.com/chatts/";
         public static final String STORAGE_REFERENCE_PROFILE = "gs://mobicarev3.appspot.com/profiles/";
@@ -87,7 +88,7 @@ public class Constants {
         public static final String IMEI = "imei";
         public static final String DEVICES = "devices";
         public static final String FCM_MESSAGE_URL = "https://fcm.googleapis.com/fcm/send";
-        public static final String UID = "AAAALBVkRSA:APA91bFmhm26qDteRrxDHr7x1wWRxXRFkaQn3KjPAHwvoBA-Ypus8N52r-9f4F2ps5epndJQeCMWPPQrM85fkFniYWLjzSOJAiAPyLGkdlSNSiitG12lbgNp7Gb_p9WQTrX9h64jjuJV";
+        public static final String UID = "AAAA5mVkmFo:APA91bHKC0Dxm0wWHh5MzPvrywZngpZL4NnWkfoUulBvvWgT_zgnisn-jh_qM_QSwZMtZC_M9-SR99EswA0ZEni__ZIKgplCJGo_FE3XYrwZ0ZAO6MJA7dtzfmmTwMkWzVl33JcFkiE9";
 
     }
 }

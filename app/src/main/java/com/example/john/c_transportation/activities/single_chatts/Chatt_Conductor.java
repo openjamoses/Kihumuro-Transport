@@ -107,7 +107,7 @@ public class Chatt_Conductor extends AppCompatActivity {
         choseImageView = (ImageView) findViewById(R.id.imageView);
         timeImage = (ImageView) findViewById(R.id.timeImage);
         message_area = (EditText) findViewById(R.id.messageArea);
-        message_area.setEnabled(false);
+       // message_area.setEnabled(false);
         conductor_name = UserDetails.username;
         Log.e(TAG,"Conductor_name:: "+conductor_name);
        // message_area.setText("Today is - "+DateTime.daysList(context).get(DateTime.day(DateTime.getCurrentDate())));
@@ -216,12 +216,6 @@ public class Chatt_Conductor extends AppCompatActivity {
             }
         });
 
-    }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.chatt1, menu);
-        return true;
     }
     private void showMenu(){
         try{
@@ -484,9 +478,6 @@ public class Chatt_Conductor extends AppCompatActivity {
         int id = item.getItemId();
         if (item.getItemId() == android.R.id.home) {
             finish(); // close this activity and return to preview activity (if there is any)
-        }
-        if (id == R.id.action_all) {
-            startActivity(new Intent(context, Chatt_All.class));
         }
         return super.onOptionsItemSelected(item);
     }
